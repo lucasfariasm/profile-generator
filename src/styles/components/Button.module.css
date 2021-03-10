@@ -1,0 +1,13 @@
+button {
+  color: var(--white);
+  background: var(--blue);
+
+  width: 270px;
+  height: 80px;
+
+  border-radius: 5px;
+}
+
+button:hover {
+  background: var(--blue-hover)
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --blue: #8097FF;
+  --blue-light: #F2F5FF;
+  --blue-hover: #8EA3FF;
+  --gray: #F5F8FA;
+  --gray-line: #8FA7B2;
+  --title: #7B90EC;
+}
+
+body {
+  background: var(--blue-light);
+}
+
+body, input, textarea, button {
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
