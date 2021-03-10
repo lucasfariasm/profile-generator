@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { CreateProfile } from './pages/CreateProfile';
+import { Footer } from './pages/Footer';
 import { Home } from './pages/Home';
 
 import './styles/global.css'
@@ -12,6 +13,7 @@ function App(){
     <>
       <Home/>
       <CreateProfile/>
+      <Footer/>
     </>
   );
 }

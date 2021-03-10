@@ -1,0 +1,24 @@
+footer {
+  background: var(--blue);
+  height: 150px;
+  width:100vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.container p {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.container span {
+  font-weight: 650;
+}

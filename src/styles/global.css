@@ -16,6 +16,7 @@
 
 body {
   background: var(--blue-light);
+  overflow-x: hidden;
 }
 
 body, input, textarea, button {
