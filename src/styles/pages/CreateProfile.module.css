@@ -1,0 +1,33 @@
+.topCreate {
+  background: var(--blue);
+  height: 240px;
+  width:100vw;
+  color: var(--white);
+  text-align: center;
+}
+
+.titleCreateProfile {
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: left;
+}
+.titleCreateProfile h1 {
+  padding-left: 28px;
+}
+
+.form {
+  width: 550px;
+  margin: -100px auto 0;
+  padding: 35px;
+
+  background: var(--white);
+  color: var(--gray-title);
+
+  border: 1px solid var(--blue);
+  border-radius: 20px;
+}
+
+.button {
+  margin: 50px auto;
+}

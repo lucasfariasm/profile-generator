@@ -1,0 +1,19 @@
+#formLanguage {
+  position: relative;
+}
+
+.addLanguage {
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  color: var(--blue);
+  background: var(--gray);
+  border: 1px dashed var(--blue);
+}
+
+.addLanguage:hover {
+  color: var(--white)
+}
