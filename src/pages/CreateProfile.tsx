@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Academic } from '../components/Academic';
 import { Button } from '../components/Button';
@@ -8,12 +8,30 @@ import { Languages } from '../components/Languages';
 import { PersonalData } from '../components/PersonalData';
 import { Skills } from '../components/Skills';
 
+import { FaArrowUp } from "react-icons/fa";
+
 import styles from '../styles/pages/CreateProfile.module.css'
 
 export function CreateProfile(){
+  const [showScroll, setShowScroll] = useState(false)
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 300){
+      setShowScroll(true)
+    } else if (showScroll && window.pageYOffset <= 300){
+      setShowScroll(false)
+    }
+  };
+
+  function handleComeBack() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  window.addEventListener('scroll', checkScrollTop)
+
   return (
     <div>
-      <div className={styles.topCreate}>
+      <div className={styles.topCreate} id="informations">
         <div className={styles.titleCreateProfile}>
           <h1>Inserir informações</h1>
         </div>
@@ -27,6 +45,10 @@ export function CreateProfile(){
         <Languages />
       </div>
       <Button className={styles.button}>Gerar Currículo</Button>
+      <div className="comeBack"
+      onClick={handleComeBack}
+      style={{display: showScroll ? 'flex' : 'none'}}
+      ><FaArrowUp/></div>
     </div>
   )
 }

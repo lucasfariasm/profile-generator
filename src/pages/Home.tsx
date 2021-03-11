@@ -6,7 +6,12 @@ import styles from '../styles/pages/Home.module.css'
 import { Button } from '../components/Button';
 
 export function Home(){
-
+  
+  function scrollToCreateProfile(){
+    const heightScreen = window.innerHeight
+    
+    window.scrollTo({top: heightScreen, behavior: 'smooth'})
+  }
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -15,7 +20,7 @@ export function Home(){
           <img src={homeImage} alt="Imagem Currículo"/>
         </div>
 
-        <Button className={styles.button}>Começar</Button>
+        <Button onClick={scrollToCreateProfile} className={styles.button}>Começar</Button>
       </div>
     </div>
   )

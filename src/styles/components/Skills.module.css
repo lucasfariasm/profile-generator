@@ -15,5 +15,6 @@
 }
 
 .addSkill:hover {
+  background: var(--blue);
   color: var(--white)
 }
