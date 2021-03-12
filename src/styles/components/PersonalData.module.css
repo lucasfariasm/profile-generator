@@ -1,4 +1,11 @@
-.inputForm{
-  display: inline-block !important;
-  width: 48% !important; 
+textarea {
+  height: 200px!important;
+  resize: none;
+}
+
+.resumo, #inputForm {
+  animation: slideDown .5s forwards;
+  /* transition: 0.2s */
+  /* transform: rotate(90deg); */
+  transition: transform .3s;
 }
