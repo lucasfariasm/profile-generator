@@ -111,3 +111,14 @@ input[type=number] {
 .comeBack:hover {
   background: var(--blue)
 }
+
+.form {
+  width: 550px;
+  padding: 35px;
+
+  background: var(--white);
+  color: var(--gray-title);
+
+  border: 1px solid var(--blue);
+  border-radius: 20px;
+}

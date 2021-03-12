@@ -10,7 +10,11 @@ import { Skills } from '../components/Skills';
 
 import { FaArrowUp } from "react-icons/fa";
 
+import { AcademicModal } from '../components/AcademicModal';
+import { CertificatesModal } from '../components/CertificatesModal';
+
 import styles from '../styles/pages/CreateProfile.module.css'
+import { ExperienceModal } from '../components/ExperienceModal';
 
 export function CreateProfile(){
   const [showScroll, setShowScroll] = useState(false)
@@ -36,7 +40,7 @@ export function CreateProfile(){
           <h1>Inserir informações</h1>
         </div>
       </div>
-      <div className={styles.form}>
+      <div className="form" id={styles.form}>
         <PersonalData />
         <Experience />
         <Academic />
@@ -45,6 +49,9 @@ export function CreateProfile(){
         <Languages />
       </div>
       <Button className={styles.button}>Gerar Currículo</Button>
+      <AcademicModal />
+      <CertificatesModal />
+      <ExperienceModal />
       <div className="comeBack"
       onClick={handleComeBack}
       style={{display: showScroll ? 'flex' : 'none'}}

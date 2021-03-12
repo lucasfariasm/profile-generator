@@ -16,16 +16,8 @@
   padding-left: 28px;
 }
 
-.form {
-  width: 550px;
+#form {
   margin: -100px auto 0;
-  padding: 35px;
-
-  background: var(--white);
-  color: var(--gray-title);
-
-  border: 1px solid var(--blue);
-  border-radius: 20px;
 }
 
 .button {
