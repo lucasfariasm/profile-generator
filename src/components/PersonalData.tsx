@@ -57,12 +57,12 @@ export function PersonalData(){
         className={'inputForm'}
         id={styles.inputForm}
         key={id}
-        style={value === '-'? {display: 'block', transition: 'transform .2s'} : {display: 'none', transition: 'transform .2s'}}
+        style={value === '-'? {display: 'block'} : {display: 'none'}}
       >
         <label htmlFor={id}>{label}</label>
         <input type={type} id={id} />
       </div>)}
-      <div style={value === '-'? {display: 'block', transition: 'transform 0.2s'} : {display: 'none', transition: 'transform 0.2s'}} className={styles.resumo}>
+      <div style={value === '-'? {display: 'block'} : {display: 'none'}} className={styles.resumo}>
         <label htmlFor="resume">Resumo</label> 
         <textarea rows={10}
           id="resume" 

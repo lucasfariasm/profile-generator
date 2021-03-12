@@ -18,7 +18,7 @@ export function Languages(){
       <div
         className="inputForm"
         id={styles.formLanguage}
-        style={value === '-'? {display: 'block', transition: 'transform .2s'} : {display: 'none', transition: 'transform .2s'}}
+        style={value === '-'? {display: 'block'} : {display: 'none'}}
       >
         <input type="text"/>
         <button type="button" className={styles.addLanguage}>+</button>

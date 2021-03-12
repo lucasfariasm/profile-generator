@@ -16,7 +16,7 @@ export function Certificates(){
         <p onClick={toggleSection}>{value}</p>
       </div>
       <button
-        style={value === '-'? {display: 'block', transition: 'transform .2s'} : {display: 'none', transition: 'transform .2s'}}
+        style={value === '-'? {display: 'block'} : {display: 'none'}}
         type="button"
         className={styles.addExperience}
       >+</button>

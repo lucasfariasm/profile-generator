@@ -16,7 +16,7 @@ export function Academic(){
         <h2>Formação Acadêmica</h2>
         <p onClick={toggleSection}>{value}</p>
       </div>
-      <button style={value === '-'? {display: 'block', transition: 'transform .2s'} : {display: 'none', transition: 'transform .2s'}} type="button" className={styles.addExperience}>+</button>
+      <button style={value === '-'? {display: 'block'} : {display: 'none'}} type="button" className={styles.addExperience}>+</button>
     </form>
   )
 }
