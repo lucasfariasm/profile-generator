@@ -13,6 +13,7 @@
   --gray-line: #D3E2E5;
   --gray-title: #8FA7B2;
   --title: #7B90EC;
+  --red: #FF669D;
 }
 
 body {
@@ -32,6 +33,10 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .title {
@@ -121,4 +126,8 @@ input[type=number] {
 
   border: 1px solid var(--blue);
   border-radius: 20px;
+}
+
+::placeholder {
+  color: var(--gray-title)
 }
