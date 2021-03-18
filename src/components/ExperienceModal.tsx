@@ -23,27 +23,22 @@ export const ExperienceModal = ({closeModal}: ModalProps) => {
 
         <div className={styled.titleCompany}>
           <div className="inputForm">
-            <label htmlFor="jobTitle">Título/Cargo</label>
-            <input type="text" id="jobTitle"/>
+            <input placeholder="Título/Cargo" type="text"/>
           </div>
           <div className="inputForm">
-            <label htmlFor="company">Empresa</label>
-            <input type="text" id="company"/>
+            <input placeholder="Empresa" type="text"/>
           </div>
         </div>
         <div className="inputForm">
-          <label htmlFor="localization">Localização</label>
-          <input type="text" id="localization"/>
+          <input placeholder="Localização" type="text"/>
         </div>
 
         <div className={styled.titleCompany}>
           <div className="inputForm">
-            <label htmlFor="startDate">Data de início</label>
-            <input type="text" id="startDate"/>
+            <input placeholder="Data de início" type="text"/>
           </div>
           <div className="inputForm">
-            <label htmlFor="endDate">Data de saída</label>
-            <input type="text" id="endDate"/>
+            <input placeholder="Data de saída"type="text"/>
             <div className={styled.checkbox}>
               <input type="checkbox"/>
               <p>É o meu emprego atual</p>
@@ -52,8 +47,7 @@ export const ExperienceModal = ({closeModal}: ModalProps) => {
         </div>
         
         <div className="inputForm">
-          <label htmlFor="descriptionOfActivities">Descrição das atividades</label>
-          <input type="text" id="descriptionOfActivities"/>
+          <input placeholder="Descrição das atividades" type="text"/>
         </div>
         <Button style={{margin: '0 auto'}}>Concluído</Button>
       </form>

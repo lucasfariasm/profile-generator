@@ -26,28 +26,23 @@ export const AcademicModal = ({closeModal}: ModalProps) => {
           className={styled.titleCompany}
         >
           <div className="inputForm">
-            <label htmlFor="degree">Diploma</label>
-            <input type="text" id="degree"/>
+            <input placeholder="Diploma" type="text"/>
           </div>
           <div className="inputForm">
-            <label htmlFor="institution">Instituição</label>
-            <input type="text" id="institution"/>
+            <input placeholder="Instituição" type="text"/>
           </div>
         </div>
         <div className="inputForm">
-          <label htmlFor="localization">Localização</label>
-          <input type="text" id="localization"/>
+          <input placeholder="Localização" type="text"/>
         </div>
         <div
           className={styled.titleCompany}
         >
           <div className="inputForm">
-            <label htmlFor="startDate">Data de início</label>
-            <input type="text" id="startDate"/>
+            <input placeholder="Data de início" type="text"/>
           </div>
           <div className="inputForm">
-            <label htmlFor="endDate">Data de graduação</label>
-            <input type="text" id="endDate"/>
+            <input placeholder="Data de graduação" type="text"/>
             <div className={styled.checkbox}>
               <input type="checkbox"/>
               <p>Em andamento</p>
@@ -56,8 +51,7 @@ export const AcademicModal = ({closeModal}: ModalProps) => {
           </div>
         </div>
         <div className="inputForm">
-          <label htmlFor="descriptionOfActivities">Adicional</label>
-          <input type="text" id="descriptionOfActivities"/>
+          <input placeholder="Adicional" type="text"/>
         </div>
         <Button style={{margin: '0 auto'}}>Concluído</Button>
       </form>
