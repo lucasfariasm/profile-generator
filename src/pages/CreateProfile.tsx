@@ -11,8 +11,6 @@ import { Skills } from '../components/Skills';
 import { FaArrowUp } from "react-icons/fa";
 
 // import { AcademicModal } from '../components/AcademicModal';
-// import { CertificatesModal } from '../components/CertificatesModal';
-// import { ExperienceModal } from '../components/ExperienceModal';
 
 import styles from '../styles/pages/CreateProfile.module.css'
 
@@ -50,8 +48,7 @@ export function CreateProfile(){
       </div>
       <Button className={styles.button}>Gerar Currículo</Button>
       {/* <AcademicModal /> */}
-      {/* <CertificatesModal /> */}
-      {/* <ExperienceModal /> */}
+      
       <div className="comeBack"
       onClick={handleComeBack}
       style={{display: showScroll ? 'flex' : 'none'}}

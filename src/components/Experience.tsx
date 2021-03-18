@@ -2,12 +2,22 @@ import React, { useState } from 'react';
 // import { TiDelete } from "react-icons/ti";
 
 import styles from '../styles/components/Experience.module.css'
+import { ExperienceModal } from './ExperienceModal';
 
 export function Experience(){
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [value, setValue] = useState('+')
 
   function toggleSection(){
     setValue(value === "+" ? "-" : "+")
+  }
+
+  function handleOpenModal(){
+    setIsModalOpen(true);
+  }
+
+  function handleCloseModal(){
+    setIsModalOpen(false);
   }
 
   return (
@@ -20,7 +30,11 @@ export function Experience(){
         style={value === '-'? {display: 'block'} : {display: 'none'}}
         type="button"
         className={styles.addExperience}
-      >+</button>
+        onClick={handleOpenModal}
+      >
+        +
+      </button>
+      {isModalOpen && <ExperienceModal closeModal={handleCloseModal}/>}
     </form>
   )
 }
