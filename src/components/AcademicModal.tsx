@@ -18,7 +18,7 @@ export const AcademicModal = ({closeModal}: ModalProps) => {
           className={styled.outModal}
           onClick={closeModal}
         >
-          <TiDelete size={30}
+          <TiDelete size={25}
         />
         </p>
 

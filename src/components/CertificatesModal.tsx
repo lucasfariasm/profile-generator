@@ -14,7 +14,7 @@ export const CertificatesModal = ({closeModal}: ModalProps) => {
     <div className={styled.overlay}>
       <form className="form" id={styled.form}>
         <h2 className="title">Certificados e Cursos</h2>
-        <p className={styled.outModal} onClick={closeModal}><TiDelete size={30}/></p>
+        <p className={styled.outModal} onClick={closeModal}><TiDelete size={25}/></p>
 
         <div className="inputForm">
           <label htmlFor="title">Título</label>

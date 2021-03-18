@@ -18,7 +18,7 @@ export const ExperienceModal = ({closeModal}: ModalProps) => {
           className={styled.outModal}
           onClick={closeModal}
         >
-          <TiDelete size={30}/>
+          <TiDelete size={25}/>
         </p>
 
         <div className={styled.titleCompany}>
